@@ -1,7 +1,8 @@
 require 'sinatra'
+require 'sinatra/reloader'
 
 get '/' do
-    'hi'
+    'hi boy'
 end
 
 get '/frank-says' do
