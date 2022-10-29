@@ -1,10 +1,13 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
-get '/' do
-    'hi boy'
+require './functions/put_item'
+require './functions/get_item'
+
+get '/put_item' do
+    put_item()
 end
 
-get '/frank-says' do
-    'Put this in your pipe & smoke it!'
+get '/get_item' do
+    get_item()
 end
